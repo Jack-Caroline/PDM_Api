@@ -28,8 +28,8 @@ class HandlerLog:
         formatter = "%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s"
         mate = logging.Formatter(formatter)
 
-        fh.setFormatter(formatter)
-        sh.setFormatter(formatter)
+        fh.setFormatter(mate)
+        sh.setFormatter(mate)
         return log
 
 
